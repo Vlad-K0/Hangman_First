@@ -11,20 +11,16 @@ public class Display {
     public static String NO = "нет";
     public static final Scanner SCANNER = new Scanner(System.in);
 
-    private String userInput;
-
-    public void UserStart() {
+    public boolean UserStart() {
         System.out.println(START_MESSAGE);
 
-        userInput = SCANNER.nextLine();
+        String userInput = SCANNER.nextLine();
 
         while(!(userInput.toLowerCase().equals(YES) || userInput.toLowerCase().equals(NO))){
             System.out.println(ERROR_INPUT_MESSAGE);
             userInput = SCANNER.nextLine();
         }
 
-        if (userInput.equals(YES)){
-            Hangman.StartGame();
-        }
+        return userInput.equals(YES);
     }
 }
