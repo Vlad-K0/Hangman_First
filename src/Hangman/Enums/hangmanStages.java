@@ -98,25 +98,6 @@ public enum hangmanStages {
         this.state = state;
     }
 
-    public void printStage(int errors) {
-        switch (errors) {
-            case 1:
-                System.out.println(HEAD.state);
-            case 2:
-                System.out.println(BODY.state);
-            case 3:
-                System.out.println(LEFT_HAND.state);
-            case 4:
-                System.out.println(RIGHT_HAND.state);
-            case 5:
-                System.out.println(RIGHT_LEG.state);
-            case 6:
-                System.out.println(LEFT_LEG.state);
-            default:
-                System.out.println(DEFAULT.state);
-        }
-    }
-
     public String getState() {
         return state;
     }
