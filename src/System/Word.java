@@ -10,7 +10,7 @@ import java.util.Random;
 
 
 public class Word {
-    public static final String PATH_DICTIONARY = "./resource/Dictionary1.txt";
+    public static final String PATH_DICTIONARY = "./resource/Dictionary.txt";
 
     public static String getRandomWord() {
         try {
