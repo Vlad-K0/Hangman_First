@@ -117,7 +117,7 @@ public enum hangmanStages {
         }
     }
 
-    private String getState() {
+    public String getState() {
         return state;
     }
 }
