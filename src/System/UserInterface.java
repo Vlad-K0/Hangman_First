@@ -11,7 +11,7 @@ public class Display {
     public static String NO = "нет";
     public static final Scanner SCANNER = new Scanner(System.in);
 
-    public boolean UserStart() {
+    public boolean start() {
         System.out.println(START_MESSAGE);
 
         String userInput = SCANNER.nextLine();
